@@ -1,5 +1,5 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<style id="mobfit">@media (max-width:520px){html,body{max-width:100%;overflow-x:hidden}.lk .nw,.answer .nw{white-space:normal}}</style>
+<style id="mobfit">@media (max-width:760px){.qa.upend,.qa .lk:not(.shown),.bldl li:not(.on){display:none}.split:has(.qa)>.fig,.split:has(.qa)>div:has(>.fig){order:-1}.split:has(.qa)>.fig svg{max-height:60vh;width:auto;margin:0 auto}}@media (max-width:520px){html,body{max-width:100%;overflow-x:hidden}.lk .nw,.answer .nw{white-space:normal}}</style>
 <title>Вектор у кишені · Урок 6</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="author" content="Сидорчук Н.В.">
@@ -548,7 +548,7 @@ p.big5{font-weight:600;font-size:1.05em}
         <p class="answer lk" data-fn="pm1">Вектор <span class="nw"><span class="vc">a</span> + <span class="vc">a</span> + <span class="vc">a</span></span>: 6 клітинок праворуч і 3 вгору, тому він має координати (6; 3).</p></div>
         <div class="qa"><p><b>Порівняй цей вектор з вектором <span class="vc">a</span>. Що можна сказати про їхні напрямки та модулі?</b></p>
         <div class="inrow"><span class="nw">напрям: <i class="slot sch" data-k="c" data-o="однаковий|протилежний" data-ok="однаковий"></i></span><span class="nw">модуль: <i class="slot sch" data-k="c" data-o="утричі більший|утричі менший|такий самий" data-ok="утричі більший"></i></span><button class="btn chk">Перевірити</button></div>
-        <i class="lk lkq" data-fn="pm2"></i></div>
+        <p class="answer lk" data-fn="pm2">Вектори мають однаковий напрям, а модуль нового вектора утричі більший.</p></div>
         <div class="qa"><p><b>Як записати суму <span class="nw"><span class="vc">a</span> + <span class="vc">a</span> + <span class="vc">a</span></span> коротше?</b></p>
         <div class="inrow"><span class="nw"><span class="vc">a</span> + <span class="vc">a</span> + <span class="vc">a</span> = <i class="slot" data-k="n" data-ok="3"></i><span class="vc">a</span></span><button class="btn chk">Перевірити</button></div>
         <p class="answer lk">Як і у випадку з числами, повторне додавання можна замінити множенням. Тому <span class="nw"><span class="vc">a</span> + <span class="vc">a</span> + <span class="vc">a</span> = 3<span class="vc">a</span></span>.<br><span style="color:var(--swan)">Далі розглядаємо поняття множення вектора на число.</span></p></div>
@@ -578,8 +578,8 @@ p.big5{font-weight:600;font-size:1.05em}
   </div>
   <div class="task" id="bldT">
     <div class="head"><span class="lbl rec">Побудова</span><h3>Побудуй добуток вектора на число</h3></div>
-    <p>Дано вектор <span class="vc">a</span>. Будуй по черзі: торкнись на сітці вузла, де вектор починається, потім вузла, де він закінчується.</p>
-    <ol class="bldl"><li data-k="0">1) <span class="nw">2<span class="vc">a</span></span></li><li data-k="1">2) <span class="nw">−<span class="vc">a</span></span></li><li data-k="2">3) <span class="nw"><span class="fr2"><span>1</span><span>2</span></span><span class="vc">a</span></span></li><li data-k="3">4) <span class="nw">−<span class="fr2"><span>3</span><span>2</span></span><span class="vc">a</span></span></li></ol>
+    <p>Дано вектор <span class="vc">b</span>. Будуй по черзі: торкнись на сітці вузла, де вектор починається, потім вузла, де він закінчується.</p>
+    <ol class="bldl"><li data-k="0">1) <span class="nw">2<span class="vc">b</span></span></li><li data-k="1">2) <span class="nw">−<span class="vc">b</span></span></li><li data-k="2">3) <span class="nw"><span class="fr2"><span>1</span><span>2</span></span><span class="vc">b</span></span></li><li data-k="3">4) <span class="nw">−3<span class="vc">b</span></span></li><li data-k="4">5) <span class="nw">2,5<span class="vc">b</span></span></li><li data-k="5">6) <span class="nw">−1,5<span class="vc">b</span></span></li></ol>
     <div class="fig" id="bldFig" style="max-width:600px"></div>
     <div class="row"><button class="btn chk" id="bldChk">Перевірити</button><button class="btn" id="bldClr">Очистити</button></div>
   </div>
@@ -650,6 +650,27 @@ p.big5{font-weight:600;font-size:1.05em}
         <div class="def lk" style="border-color:var(--rak)"><b style="color:var(--rak)">Протилежні вектори</b> — вектори, що мають рівні модулі й протилежно напрямлені. <span class="nw"><span style="color:var(--swan)"><span class="vc">F</span></span></span> і <span class="nw"><span style="color:var(--rak)">−<span class="vc">F</span></span></span> — протилежні: <span class="nw"><span style="color:var(--swan)"><span class="vc">F</span></span> + (<span style="color:var(--rak)">−<span class="vc">F</span></span>) = <span class="vc">0</span></span>.</div></div>
       </div>
       <div class="fig" id="sledFig" style="max-width:380px"></div>
+    </div>
+  </div>
+
+  <div class="task" id="droneT">
+    <div class="head"><span class="lbl life">Задача з життя</span><h3>Задача 2. Дрон-фотограф</h3></div>
+    <div class="split">
+      <div class="block">
+        <div class="def">Дрон вилітає з точки <span class="m">O</span> і летить рівномірно зі швидкістю <span class="nw"><span class="vc">v</span>(3; 4) м/с</span>. За <span class="m">t</span> секунд він переміщується на вектор <span class="nw"><span class="m">t</span><span class="vc">v</span></span>.</div>
+        <div class="qa"><p><b>Яким вектором задано переміщення дрона за 10 с? На якій відстані від <span class="m">O</span> він буде?</b></p>
+        <div class="inrow"><span class="nw">10<span class="vc">v</span>(<i class="slot" data-k="n" data-ok="30"></i>; <i class="slot" data-k="n" data-ok="40"></i>)</span><span class="nw">відстань: <i class="slot" data-k="n" data-ok="50"></i> м</span><button class="btn chk">Перевірити</button></div>
+        <p class="answer lk" data-fn="dr1"><span class="nw">10<span class="vc">v</span>(30; 40)</span>; <span class="nw">|10<span class="vc">v</span>| = 10 · |<span class="vc">v</span>| = 10 · 5 = 50</span> (м).</p></div>
+        <div class="qa"><p><b>Назад дрон летить зі швидкістю <span class="nw"><span class="vc">u</span> = −<span class="fr2"><span>1</span><span>2</span></span><span class="vc">v</span></span>. Знайди координати <span class="vc">u</span> і модуль.</b></p>
+        <div class="inrow"><span class="nw"><span class="vc">u</span>(<i class="slot" data-k="n" data-ok="−1,5"></i>; <i class="slot" data-k="n" data-ok="−2"></i>)</span><span class="nw">|<span class="vc">u</span>| = <i class="slot" data-k="n" data-ok="2,5"></i> м/с</span><button class="btn chk">Перевірити</button></div>
+        <p class="answer lk"><span class="nw"><span class="vc">u</span>(−1,5; −2)</span>; <span class="nw">|<span class="vc">u</span>| = <span class="fr2"><span>1</span><span>2</span></span> · 5 = 2,5</span> (м/с).</p></div>
+        <div class="qa"><p><b>Скільки секунд дрон летітиме назад до <span class="m">O</span>?</b></p>
+        <div class="inrow"><span class="nw"><i class="slot" data-k="n" data-ok="20"></i> с</span><button class="btn chk">Перевірити</button></div>
+        <p class="answer lk"><span class="nw">50 : 2,5 = 20</span> (с).</p></div>
+      </div>
+      <div><div class="fig" id="droneFig" style="max-width:420px;margin:0 auto"></div>
+      <p class="note" style="text-align:center;margin:.3rem 0">Можеш накреслити свої вектори: торкнись початку, потім кінця.</p>
+      <div class="row" style="justify-content:center"><button class="btn" id="drClr">Очистити</button></div></div>
     </div>
   </div>
   <div class="pager"><button data-go="col">← Колінеарність</button><button data-go="fun">Далі: Цікавинка →</button></div>
@@ -907,7 +928,7 @@ function Trainer(root){
       if(task.cycle){const n=[...b.parentNode.children].indexOf(b),s=((+b.dataset.st||0)%(task.cycle.length-1))+1;b.dataset.st=s;b.innerHTML=`${n+1}: ${task.cycle[s]}`;b.classList.remove("ok","bad");return}
       if(b.classList.contains("ok"))return;const good=b.dataset.ok==="1";
       if(good){b.classList.add("ok");q(".tr-ans").hidden=false;if(task.reveal)task.reveal(q(".tr-fig"));msg("ok","Правильно!")}
-      else{b.classList.add("bad");msg("bad","Ні, спробуй ще.");setTimeout(()=>b.classList.remove("bad"),1000)}
+      else{b.classList.add("bad");msg("bad","Спробуй ще!");setTimeout(()=>b.classList.remove("bad"),1000)}
       result(good);return}
     if(e.target.closest(".tr-chk")&&task&&(task.custom||task.check)){const r=task.check(btns());msg(r.ok?"ok":"bad",r.msg);if(r.ok)q(".tr-ans").hidden=false;result(r.ok);return}
     if(e.target.closest(".tr-show")){show();return}
@@ -1200,8 +1221,8 @@ T.qpick=()=>{let a,l,c,d;do{a=nz2();l=pick([2,3,-2,-3,-1,.5,-.5,1.5]);c=mul(l,a)
      arrowSVG(X(S[0]),Y(S[1]),X(P1[0]),Y(P1[1]),"var(--swan)",5)+lbl(g,S,P1,"~a",SW,1,20,22)+TX(X(-3)+2,Y(-1)+4,"1 хв","var(--swan)",18,"start")+
      G0("pm1",arrowSVG(X(P1[0]),Y(P1[1]),X(P2[0]),Y(P2[1]),"var(--swan)",5)+lbl(g,P1,P2,"~a",SW,1,20,22)+arrowSVG(X(P2[0]),Y(P2[1]),X(P3[0]),Y(P3[1]),"var(--swan)",5)+lbl(g,P2,P3,"~a",SW,1,20,22)+TX(X(3)-4,Y(1)-22,"3 хв","var(--swan)",18,"end"))+
      G0("pm2",arrowSVG(X(-3),Y(-3.2),X(3),Y(-.2),"var(--pike)",6)+VT(X(1.2),Y(-2.4),"3~a(6; 3)","var(--pike)",22))+
-     `<circle cx="${X(S[0])}" cy="${Y(S[1])}" r="6" fill="var(--ink)"/><text transform="translate(${X(S[0])-2} 0) scale(-1 1)" x="0" y="${Y(S[1])-12}" text-anchor="middle" style="font-size:24px">🚶</text></svg>`;
-   $("#stepFig").innerHTML=s;stepK("stepFig",["pm1","pm2"])}
+     `<circle cx="${X(S[0])}" cy="${Y(S[1])}" r="6" fill="var(--ink)"/><g id="stepW"><text transform="translate(${X(S[0])-2} 0) scale(-1 1)" x="0" y="${Y(S[1])-12}" text-anchor="middle" style="font-size:24px">🚶</text></g></svg>`;
+   $("#stepFig").innerHTML=s;stepK("stepFig",["pm1","pm2"]);const w=$("#stepW"),g1=$('#stepFig [data-k="pm1"]'),dx=X(P3[0])-X(S[0]),dy=Y(P3[1])-Y(S[1]);let run=0;FN.pm1=()=>{const my=++run,t0=performance.now(),D=4200;g1.style.transition="none";g1.setAttribute("opacity","1");const ar=[...g1.children],x0=X(S[0]);ar.forEach(e=>{const bb=e.getBBox();e._r=Math.min(.98,Math.max(0,(bb.x+bb.width*.8-x0)/dx));e.style.opacity="0"});const f=now=>{if(my!==run)return;const t=Math.min(1,(now-t0)/D),k=Math.min(3,Math.floor(t*3+.15));w.setAttribute("transform",`translate(${dx*t} ${dy*t})`);ar.forEach(e=>{e.style.transition="opacity .4s";e.style.opacity=t>=e._r?"1":"0"});if(t<1)requestAnimationFrame(f)};requestAnimationFrame(f)}}
 })();
 
 /* ================= ЗНАННЯ: МАЛЮНКИ ================= */
@@ -1230,15 +1251,32 @@ T.qpick=()=>{let a,l,c,d;do{a=nz2();l=pick([2,3,-2,-3,-1,.5,-.5,1.5]);c=mul(l,a)
   {const c=28,O=[150,330],P=v=>[O[0]+v[0]*c/10,O[1]-v[1]*c/10],F=P([30,40]),F2=P([60,80]),M=P([-30,-40]);
    let s=`<svg viewBox="30 70 400 400" role="img" aria-label="Санки і вектори сил"><rect x="0" y="0" width="440" height="470" rx="14" fill="var(--card)"/><g stroke="var(--grid)" stroke-width="1">`;
    for(let x=O[0]%c;x<=440;x+=c)s+=`<line x1="${x}" y1="0" x2="${x}" y2="470"/>`;for(let y=O[1]%c;y<=470;y+=c)s+=`<line x1="0" y1="${y}" x2="440" y2="${y}"/>`;
-   s+=`</g>`+G0("sk1",arrowSVG(...O,...F2,PK,9)+lblPx(F,F2,"2~F(60; 80)",PK,-1,30,21))+
+   s+=`</g><g id="sledAll">`+G0("sk1",arrowSVG(...O,...F2,PK,9)+lblPx(F,F2,"2~F(60; 80)",PK,-1,30,21))+
      arrowSVG(...O,...F,SW,5)+lblPx(O,F,"~F(30; 40)",SW,1,24,21)+
      G0("sk2",`<text x="${F2[0]-6}" y="${F2[1]-14}" text-anchor="end" style="font:700 20px var(--f-body);fill:var(--pike)">100 Н</text>`)+
      G0("sk3",arrowSVG(...O,...M,RK,5)+lblPx(O,M,"−~F(−30; −40)",RK,-1,70,20))+
      `<text x="${O[0]}" y="${O[1]+10}" text-anchor="middle" style="font-size:34px">🛷</text>`+
      BOY(F[0]-22*.8,F[1]-22*.6+16,1)+
      G0("sk1b",`<g id="sledFr"><line x1="${O[0]+16*.8}" y1="${O[1]+16*.6}" x2="${F[0]+16*.8}" y2="${F[1]+16*.6}" stroke="var(--ink)" stroke-width="1.8" stroke-dasharray="5 4"/>${BOY(F[0]+26*.8+8,F[1]+26*.6+12,1)}</g>`)+
-     G0("sk3b",BOY(M[0]-14,M[1]+10,0))+`</svg>`;
-   $("#sledFig").innerHTML=s;stepK("sledFig",["sk1","sk2","sk3"]);const gk=k=>$(`#sledFig [data-k="${k}"]`);const f1=FN.sk1,f3=FN.sk3;FN.sk1=()=>{f1();gk("sk1b").setAttribute("opacity","1")};FN.sk3=()=>{f3();$("#sledFr").setAttribute("opacity","0");gk("sk3b").setAttribute("opacity","1")}}
+     G0("sk3b",BOY(M[0]-14,M[1]+10,0))+`</g></svg>`;
+   $("#sledFig").innerHTML=s;stepK("sledFig",["sk1","sk2","sk3"]);const gk=k=>$(`#sledFig [data-k="${k}"]`);const f1=FN.sk1,f3=FN.sk3;const all=$("#sledAll"),u=[.6,-.8];let srun=0;const slide=()=>{const my=++srun;let t0=performance.now(),n=0;const f=now=>{if(my!==srun)return;let t=(now-t0)/2600;if(t>=1.6){n++;t0=now;t=0;if(n>=2){all.removeAttribute("transform");return}}const e=Math.min(1,t),d=t<=1.15?55*e*e:55*Math.max(0,1-(t-1.15)/.45);all.setAttribute("transform",`translate(${u[0]*d} ${u[1]*d})`);requestAnimationFrame(f)};requestAnimationFrame(f)};const shake=()=>{const my=++srun,t0=performance.now();const f=now=>{if(my!==srun)return;const t=(now-t0)/1600;if(t>=1){all.removeAttribute("transform");return}all.setAttribute("transform",`translate(${Math.sin(t*40)*3*(1-t)} 0)`);requestAnimationFrame(f)};requestAnimationFrame(f)};FN.sk1=()=>{f1();gk("sk1b").setAttribute("opacity","1");setTimeout(slide,500)};FN.sk3=()=>{f3();$("#sledFr").setAttribute("opacity","0");gk("sk3b").setAttribute("opacity","1");setTimeout(shake,600)}}
+})();
+(function(){/* дрон-фотограф */
+  {const k=7,O=[70,420],P=v=>[O[0]+v[0]*k,O[1]-v[1]*k],E=P([30,40]),U=P([28.5,38]);
+   let s=`<svg viewBox="0 0 440 470" role="img" aria-label="Стадіон, дрон і вектори швидкості"><rect x="0" y="0" width="440" height="470" fill="var(--ground)" opacity=".45"/>`+
+     `<ellipse cx="220" cy="260" rx="150" ry="95" fill="none" stroke="var(--rak)" stroke-width="14" opacity=".35"/><ellipse cx="220" cy="260" rx="118" ry="66" fill="var(--ground2)" opacity=".5"/><g stroke="var(--grid)" stroke-width="1">`;
+   for(let i=1;i<=5;i++)s+=`<line x1="${O[0]+i*70}" y1="40" x2="${O[0]+i*70}" y2="${O[1]}"/><line x1="${O[0]}" y1="${O[1]-i*70}" x2="430" y2="${O[1]-i*70}"/>`;
+   s+=`</g>`+arrowSVG(O[0],O[1],430,O[1],"var(--muted)",1.6)+arrowSVG(O[0],O[1],O[0],30,"var(--muted)",1.6)+TX(425,O[1]+24,"x, схід","var(--muted)",15,"end")+TX(O[0]+8,40,"y, північ","var(--muted)",15,"start")+
+     [10,20,30,40].map((m,i)=>TX(O[0]+(i+1)*70,O[1]+22,m,"var(--muted)",14)+TX(O[0]-10,O[1]-(i+1)*70+5,m,"var(--muted)",14,"end")).join("")+TX(O[0]-12,O[1]+22,"O","var(--ink)",18)+
+     G0("dr1",arrowSVG(...O,...E,PK,5)+VT(P([2,33])[0],P([2,33])[1],"10~v(30; 40)",PK,21,"start")+`<g><animateMotion dur="15s" repeatCount="indefinite" keyPoints="0;1;1;0;0" keyTimes="0;.32;.36;.96;1" calcMode="linear" path="M${O[0]} ${O[1]} L${E[0]} ${E[1]}"/><text y="8" text-anchor="middle" style="font-size:28px">🚁</text></g>`+TX(E[0]-50,E[1]-26,"50 м від O","var(--pike)",18))+
+     `</svg>`;
+   $("#droneFig").innerHTML=s.replace("</svg>",`<g id="drDraw"></g><rect id="drHit" x="${O[0]-20}" y="20" width="${440-O[0]+20}" height="${O[1]+20-20+10}" fill="transparent" style="cursor:crosshair"/></svg>`);stepK("droneFig",["dr1"]);
+   let L=[],pend=null;const svg=$("#droneFig svg"),cols=["var(--pike)","var(--gold)","var(--rak)"];
+   const draw=()=>{let h="";L.forEach(([a,b],i)=>{h+=arrowSVG(...P(a),...P(b),cols[i%3],5)});if(pend){const q=P(pend);h+=`<circle cx="${q[0]}" cy="${q[1]}" r="9" fill="none" stroke="var(--gold)" stroke-width="3"/>`}$("#drDraw").innerHTML=h};
+   $("#drHit").addEventListener("click",e=>{e.stopPropagation();const pt=svg.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;const q=pt.matrixTransform(svg.getScreenCTM().inverse());
+     const n=[Math.round((q.x-O[0])/k/10)*10,Math.round((O[1]-q.y)/k/10)*10];if(n[0]<0||n[1]<0||n[0]>50||n[1]>50)return;
+     if(!pend)pend=n;else{if(n[0]!==pend[0]||n[1]!==pend[1])L.push([pend,n]);pend=null}draw()});
+   $("#drClr").addEventListener("click",e=>{e.stopPropagation();L=[];pend=null;draw()})}
 })();
 /* Пригадай: побудова a + b на дошці кліками */
 (()=>{const el=$("#repFig");if(!el)return;const A0=[1,3],a=[3,-2],B0=[1,5],b=[3,1],O=[5,5];
@@ -1257,12 +1295,12 @@ T.qpick=()=>{let a,l,c,d;do{a=nz2();l=pick([2,3,-2,-3,-1,.5,-.5,1.5]);c=mul(l,a)
   $("#repShow").addEventListener("click",e=>{e.stopPropagation();shown=!shown;draw()});
 })();
 /* Побудова λa кліками */
-(()=>{const el=$("#bldFig");if(!el)return;const A=[1,3],a=[4,-2],LAM=[2,-1,.5,-1.5],COL=[PK,RK,GD,RK];
-  const REF=[[1,8],[12,4],[7,2],[13,1]],items=[...$$("#bldT .bldl li")],chk=$("#bldChk"),clr=$("#bldClr");
-  let cur=0,pend=null,U={},tries=0;const n4=4;
+(()=>{const el=$("#bldFig");if(!el)return;const A=[1,6],a=[2,0],LAM=[2,-1,.5,-3,2.5,-1.5],COL=[PK,RK,GD,RK,PK,RK];
+  const REF=[[5,6],[12,6],[1,4],[10,4],[1,2],[11,2]],items=[...$$("#bldT .bldl li")],chk=$("#bldChk"),clr=$("#bldClr");
+  let cur=0,pend=null,U={},tries=0;const n4=6;
   const okk=k=>{const u=U[k];return !!u&&u[1][0]-u[0][0]===LAM[k]*a[0]&&u[1][1]-u[0][1]===LAM[k]*a[1]};
-  function draw(){const g=Grid(el,14,8,40);g.svg.classList.add("tap");
-    let h=g.arrow(A,add(A,a),SW,5)+lbl(g,A,add(A,a),"~a",SW,-1);
+  function draw(){const g=Grid(el,12,7,40);g.svg.classList.add("tap");
+    let h=g.arrow(A,add(A,a),SW,5)+lbl(g,A,add(A,a),"~b",SW,-1);
     for(const k in U){const [P,Q,st]=U[k],c=st==="bad"?"#9aa3b2":COL[k];h+=g.arrow(P,Q,c,5)+`<text x="${(g.X(P[0])+g.X(Q[0]))/2}" y="${(g.Y(P[1])+g.Y(Q[1]))/2-12}" text-anchor="middle" style="font:800 18px var(--f-body);fill:${c};paint-order:stroke;stroke:var(--card);stroke-width:4px">${+k+1})</text>`}
     if(pend)h+=`<circle cx="${g.X(pend[0])}" cy="${g.Y(pend[1])}" r="9" fill="none" stroke="var(--gold)" stroke-width="3"/>`;
     g.ct.innerHTML=h;
