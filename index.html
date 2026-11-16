@@ -1,4 +1,5 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style id="introCss">#intro{display:none}body.introOn #bar,body.introOn main>section.pane{display:none!important}body.introOn #intro{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;min-height:calc(100vh - 52px);min-height:calc(100svh - 52px);text-align:center;padding:8px 0 20px}#intro>header{display:flex;flex-direction:column;align-items:center;gap:6px}#intro .cover{width:100%;max-width:640px}#intro h2{font-size:clamp(28px,3.2vw,40px)}#intro .cover-art svg{max-height:36vh;width:auto;max-width:100%}#introGo{font-size:20px;padding:12px 44px;border-radius:14px;box-shadow:0 6px 18px color-mix(in srgb,var(--swan) 30%,transparent)}@media (max-width:760px){body.introOn #intro{gap:14px;justify-content:flex-start;padding-top:14px}#intro h2{font-size:24px}#intro .cover{padding:10px}#intro .cover-art svg{max-width:230px}#intro .phcap{font-size:15px}}</style>
 <style id="mobfit">@media (max-width:760px){.qa.upend,.qa .lk:not(.shown),.bldl li:not(.on){display:none}.split:has(.qa)>.fig,.split:has(.qa)>div:has(>.fig){order:-1}.split:has(.qa)>.fig svg{max-height:60vh;width:auto;margin:0 auto}}@media (max-width:520px){html,body{max-width:100%;overflow-x:hidden}.lk .nw,.answer .nw{white-space:normal}}</style>
 <title>Вектор у кишені · Урок 6</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -499,7 +500,7 @@ p.big5{font-weight:600;font-size:1.05em}
 
 <main>
 <!-- 1. ПРИГАДАЙ І ПОМІРКУЙ -->
-<section class="pane" id="start">
+<section id="intro" aria-label="Титульна сторінка">
   <header style="align-items:center;text-align:center">
     <p class="series">Математика без кордонів · Геометрія · 9 клас</p>
     <div style="display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap"><p class="series" style="margin:0"><span class="pill">Вектор у кишені</span></p><p class="lnum" style="margin:0">Урок 6</p></div>
@@ -508,8 +509,10 @@ p.big5{font-weight:600;font-size:1.05em}
   <div class="cover">
     <div class="cfcol"><div class="cover-art" id="coverFig"></div><p class="phcap">Ідеш, біжиш, їдеш велосипедом: напрям той самий, змінюється лише швидкість. Як це записати?</p></div>
   </div>
-
-  <div class="task">
+  <button class="btn go" id="introGo" type="button">Розпочати →</button>
+</section>
+<section class="pane" id="start">
+    <div class="task">
     <div class="head"><span class="lbl rec">Пригадай</span><h3>Колінеарні вектори і модуль</h3></div>
     <div class="split">
       <div class="block">
@@ -1548,7 +1551,7 @@ $$(".trainer").forEach(Trainer);
 
 /* старт */
 let start="start";try{const h=location.hash.slice(1);if(TABS.includes(h))start=h}catch(e){}
-show(start,false);
+if(start==="start"&&!location.hash.slice(1)){document.body.classList.add("introOn");document.getElementById("introGo").addEventListener("click",()=>{document.body.classList.remove("introOn");show("start",true)})}else show(start,false);
 })();
 </script>
 <style id="trlimCss">.tr-shb{display:inline-grid;place-items:center;width:26px;height:20px;border-radius:10px;border:0;padding:0;background:#0e7c86;color:#fff;cursor:pointer}.tr-shb svg{width:14px;height:14px}.tr-shb.c{box-shadow:0 0 0 2px color-mix(in srgb,#0e7c86 35%,transparent)}.tr-shb:hover{filter:brightness(1.15)}.tr-cnt{display:inline-flex!important;gap:5px;align-items:center}.tr-cnt i{display:block;width:16px;height:8px;border-radius:4px;background:var(--line)}.tr-cnt i.d{background:var(--ok)}.tr-cnt i.c{background:var(--swan);box-shadow:0 0 0 2px color-mix(in srgb,var(--swan) 25%,transparent)}.tr-cnt{font-weight:700;color:var(--muted);font-size:.95em;white-space:nowrap;margin-left:auto;padding-left:.6em}.tr-top .tr-cnt,.head .tr-cnt{order:9}.tr-fin{margin:.6em 0;padding:1em 1.2em;border-radius:14px;background:color-mix(in srgb,var(--ok) 12%,transparent);border-left:6px solid var(--ok);font-weight:700;font-size:1.1em;color:var(--ink)}.shb{display:inline-flex;align-items:center;gap:.35em;background:#0e7c86;color:#fff;font-family:var(--f-body);font-weight:700;font-size:.74em;line-height:1.25;padding:.2em .75em .2em .5em;border-radius:999px;margin:0 .55em .35em 0;vertical-align:middle;white-space:nowrap;letter-spacing:.01em}.shb svg{width:1.15em;height:1.15em;flex:none}.shb .shw{font-weight:500;opacity:.92}
